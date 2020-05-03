@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Compilar",
+			"command": "/usr/bin/gcc",
+			"args": [
+				"-g3",
+				"${workspaceFolder}/main.c",
+				"${workspaceFolder}/model/base.c",
+				"-o",
+				"${workspaceFolder}/dist/af3"
+			],
+			"options": {
+				"cwd": "/usr/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		}
+	]
+}
